@@ -1,3 +1,19 @@
+# **Projeto Pokedex Labenu**
+![Pokedex](https://static.wikia.nocookie.net/pokepediabr/images/3/38/Pok%C3%A9dex_Kanto.png/revision/latest?cb=20131224014121&path-prefix=pt-br)
+Site desenvolvido para capturar pokemons e observá-los em sua própria pokedex.
+
+## Índice
+- <a href='#-sobre'>Sobre o Projeto </a>
+- <a href='#-getting-started'>Getting Started </a>
+- <a href='#-funcionalidades'>Funcionalidades do Projeto </a>
+- <a href='#-descricao'>Descrição </a>
+- <a href='#-tecnologias-utilizadas'>Tecnologias usadas </a>
+
+## Sobre o Projeto
+
+
+
+
 # **Projeto React e API's**
 O Projeto React e APIs é um site de pokémons que possui três páginas: Home, Pokedex e Detalhes. O projeto está subdivido em temas de acordo com os conteúdos que estudado durante o Módulo 2 - Frontend.
 
