@@ -6,10 +6,11 @@ import { BASE_URL } from "../../constants/url";
 import PokemonCard from "../../components/CardPokemon/PokemonCard";
 import { Flex, Skeleton } from "@chakra-ui/react";
 import { getColors } from "../../utils/ReturnColor";
+import { ModalCapturar } from "../../components/Modal/Modal";
 
 const HomePage = () => {
   const context = useContext(GlobalContext);
-  const {pokemons, pokedex } = context
+  const {pokemons, pokedex, isOpen } = context
 
   const filteredPokemons = () =>
     pokemons.filter(
@@ -18,10 +19,11 @@ const HomePage = () => {
           (pokemonInPokedex) => pokemonInList.name === pokemonInPokedex.name
         )
     );
-
+        
   return (
     <Flex flexDirection={'column'}>
       <Header />
+      {isOpen && <ModalCapturar />}
       <EdicaoHomePage>
         <PModificado>Todos Pokémons</PModificado>
         <Flex paddingTop={'55px'} justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'} gap={'50px 20px'}>

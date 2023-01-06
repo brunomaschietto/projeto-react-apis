@@ -1,6 +1,6 @@
 import { Flex, Heading, Progress, Text } from "@chakra-ui/react";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {  useParams } from "react-router-dom";
 import { PokemonID, PokemonName, PokemonType, TypesContainer } from "../../components/CardPokemon/styles";
 import Header from "../../components/Header/Header";
@@ -18,10 +18,13 @@ import {
   PInterno,
   PModificadoDetalhes,
 } from "./styles";
+import { GlobalContext } from "../../contexts/GlobalContext";
 
 
 const DetailsPage = () => {
-  const [pokemonDetails, setPokemonDetails] = useState([]);
+  // const [pokemonDetails, setPokemonDetails] = useState([]);
+  const context = useContext(GlobalContext)
+  const {pokemonDetails, setPokemonDetails} = context
   const params = useParams();
 
   useEffect(() => {
@@ -39,7 +42,7 @@ const DetailsPage = () => {
         console.log(error.response);
       });
   };
-  console.log(pokemonDetails.moves?.move?.name);
+  console.log(pokemonDetails);
 
 
   return (

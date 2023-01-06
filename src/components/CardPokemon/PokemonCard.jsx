@@ -18,6 +18,7 @@ import { getPokemonType } from "../../utils/ReturnTypesPokemon";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { getColors } from "../../utils/ReturnColor";
 import { goToDetailsPage } from "../../routes/coordinator";
+import { useDisclosure } from "@chakra-ui/react";
 
 const PokemonCard = (props) => {
   const context = useContext(GlobalContext)
@@ -63,7 +64,7 @@ const PokemonCard = (props) => {
         <ImgCard
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonsCard.id}.png`}
         />
-        {location.pathname === '/' ? (<BotaoCapturar onClick={() => addToPokedex(pokemonsCard)}>Capturar!</BotaoCapturar>) : (<BotaoDeletar onClick={() => removeFromPokedex(pokemonsCard)}>Excluir</BotaoDeletar>)}
+        {location.pathname === '/' ? (<BotaoCapturar onClick={() => addToPokedex(pokemonsCard) }>Capturar!</BotaoCapturar>) : (<BotaoDeletar onClick={() => removeFromPokedex(pokemonsCard)}>Excluir</BotaoDeletar>)}
       </div>
       <ImgPokeball src={logoPokebola} />
     </Card>

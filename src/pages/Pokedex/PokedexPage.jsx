@@ -5,16 +5,18 @@ import { EdicaoPokedexPage, PModificadoPokedex } from "./style";
 import { BASE_URL } from "../../constants/url";
 import PokemonCard from "../../components/CardPokemon/PokemonCard";
 import { Flex } from "@chakra-ui/react";
+import { ModalDeletar } from "../../components/Modal/Modal";
 
 const PokedexPage = () => {
   const context = useContext(GlobalContext);
-  const { pokedex } = context
+  const { pokedex, isOpen } = context
 
 
   return (
     <>
       <Header />
       <EdicaoPokedexPage>
+      {isOpen && <ModalDeletar />}
         <PModificadoPokedex>Meus Pokémons</PModificadoPokedex>
         <Flex paddingTop={'55px'} justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'} gap={'50px 20px'}>
         {pokedex.map((pokemon) => {

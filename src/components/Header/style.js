@@ -68,3 +68,21 @@ export const ButtonDetails = styled.button`
   color: white;
   border-radius: 8px;
 `;
+
+export const ButtonDetailsAdicionar = styled.button`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+
+  position: absolute;
+  width: 226px;
+  height: 57px;
+  left: 1274px;
+  top: 51px;
+
+  background: #33a4f5;
+  color: white;
+  border-radius: 8px;
+`;
