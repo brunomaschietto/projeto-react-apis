@@ -7,8 +7,8 @@ Site desenvolvido para capturar pokemons e observá-los em sua própria pokedex.
 - <a href='#sobre-o-projeto'>Sobre o Projeto </a>
 - <a href='#getting-started'>Getting Started </a>
 - <a href='#funcionalidades-do-projeto'>Funcionalidades do Projeto </a>
-- <a href='#descricao'>Descrição </a>
-- <a href='#tecnologias-utilizadas'>Tecnologias usadas </a>
+- <a href='#descrição'>Descrição </a>
+- <a href='#tecnologias-utilizadas'>Tecnologias utilizadas </a>
 - <a href='#contato'>Contato </a>
 
 
