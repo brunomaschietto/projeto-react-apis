@@ -4,12 +4,12 @@
 Site desenvolvido para capturar pokemons e observá-los em sua própria pokedex.
 
 ## **Índice**
-- <a href='#-sobre'>Sobre o Projeto </a>
-- <a href='#-getting-started'>Getting Started </a>
-- <a href='#-funcionalidades'>Funcionalidades do Projeto </a>
-- <a href='#-descricao'>Descrição </a>
-- <a href='#-tecnologias-utilizadas'>Tecnologias usadas </a>
-- <a href='#-contato'>Contato </a>
+- <a href='#sobre-o-projeto'>Sobre o Projeto </a>
+- <a href='#getting-started'>Getting Started </a>
+- <a href='#funcionalidades'>Funcionalidades do Projeto </a>
+- <a href='#descricao'>Descrição </a>
+- <a href='#tecnologias-utilizadas'>Tecnologias usadas </a>
+- <a href='#contato'>Contato </a>
 
 
 
